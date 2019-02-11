@@ -1,7 +1,7 @@
 # C# notes (for Unity) - Basic overview
 #### These notes are a summary of how to use C# in a Unity context for designing games.
 
-The biggest difference about C# if you're coming from a more high-level language is that _absolutely everything_ needs to be explicitly declared. Variable types, scopes, etc, are not implicitly determined by their values. Instead of saying var `myText = 'test';` you need to tell the program that `myText` is a string.
+The biggest difference about C# if you're coming from a more high-level language is that _absolutely everything_ needs to be explicitly declared. Variable types, scopes, etc, are not implicitly determined by their values. Instead of saying `var myText = 'test';` you need to tell the program that `myText` is a string.
 
 Let's start by looking at our typical code structure:
 
@@ -34,6 +34,7 @@ These are our variables, named `gameText` and `gameScore`. To declare a variable
 1. Scope/Visibility
 2. Type
 3. Name
+
 So in our example above, the visibility would be `public`, the type is a `string`, and the name is `gameText`.
 
 #### Public vs. Private
