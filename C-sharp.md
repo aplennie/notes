@@ -1,4 +1,4 @@
-# C# notes (for Unity)
+# C# notes (for Unity) - Basic overview
 #### These notes are a summary of how to use C# in a Unity context for designing games.
 
 The biggest difference about C# if you're coming from a more high-level language is that _absolutely everything_ needs to be explicitly declared. Variable types, scopes, etc, are not implicitly determined by their values. Instead of saying var `myText = 'test';` you need to tell the program that `myText` is a string.
@@ -64,12 +64,17 @@ public class DemoScript: MonoBehaviour {
 ```
 Classes contain variables and functions. Our class is named `DemoScript`, and it is derived from `MonoBehaviour`. 
 
+Here are some important classes used in Unity: 
+
 `MonoBehaviour`	is the base class for Unity scripts.
-, the MonoBehaviour reference provides you with a list of all the functions and events that are available to standard scripts attached to Game Objects. Start here if you’re looking for any kind of interaction or control over individual objects in your game.
-Transform	Every Game Object has a position, rotation and scale in space (whether 3D or 2D), and this is represented by the Transform component. As well as providing this information, the transform component
+The MonoBehaviour reference provides you with a list of all the functions and events that are available to standard scripts attached to Game Objects. Start here if you’re looking for any kind of interaction or control over individual objects in your game.
+
+`Transform`:	
+Every Game Object has a position, rotation and scale in space (whether 3D or 2D), and this is represented by the Transform component. As well as providing this information, the transform component
  has many helpful functions which can be used to move, scale, rotate, reparent and manipulate objects, as well as converting coordinates from one space to another.
-Rigidbody
- / Rigidbody2D	For most gameplay elements, the physics engine
+
+`Rigidbody`/`Rigidbody2D`:	
+For most gameplay elements, the physics engine
  provides the easiest set of tools for moving objects around, detecting triggers and collisions
 , and applying forces. The Rigidbody class (or its 2D equivalent, Rigidbody2D) provides all the properties and functions you’ll need to play with velocity, mass, drag, force, torque, collision and more.
 
