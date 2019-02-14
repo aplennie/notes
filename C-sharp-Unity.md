@@ -65,7 +65,7 @@ public class DemoScript: MonoBehaviour {
 ```
 Classes contain variables and functions. Our class is named `DemoScript`, and it is derived from `MonoBehaviour`. 
 
-Here are some important classes used in Unity: 
+Here are some important classes used in Unity: (from the Unity Docs)
 
 `MonoBehaviour`	is the base class for Unity scripts.
 The MonoBehaviour reference provides you with a list of all the functions and events that are available to standard scripts attached to Game Objects. Start here if you’re looking for any kind of interaction or control over individual objects in your game.
